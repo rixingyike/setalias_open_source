@@ -19,7 +19,7 @@
 
 ### 1. 下载
 
-前往 [Releases](https://github.com/rixingyike/setalias_open_source/releases) 页面下载最新版本的 `SetAlias.dmg`。
+前往 [Releases](https://github.com/rixingyike/setalias_app/releases) 页面下载最新版本的 `SetAlias.dmg`。
 
 ### 2. 打开 DMG
 
