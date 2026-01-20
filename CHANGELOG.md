@@ -1,5 +1,21 @@
 # Changelog
 
+## [v2.3.2] - 2026-01-20
+### 修复与优化
+- **Cnblogs 跳过优化**: `post_cnblogs.sh` 现在能正确识别配置为空的情况并静默跳过，`distribute.sh` 提供明确的“(配置缺失)”提示，不再误报“分发成功”。
+- **全浏览器支持**: `msummary` 脚本新增对 Safari 和 Chrome 的 AppleScript 权限智能检测。
+    - 自动识别权限被拒错误并给出针对性的开启引导（Safari/Chrome/Edge 步骤各异）。
+    - 引入智能重试机制：检测到未登录或权限错误时，自动进入 10 秒倒计时循环，等待用户操作后无缝继续，无需重启脚本。
+- **配置规范化**: 全局布尔开关 (`PUBLIC_TO_MYBLOG` 等) 统一支持 `true`/`false` 和 `1`/`0` 格式。
+- **Web 脚本**: `x_autofollow_blueuser.js` 优化了 429 请求过多时的冷却等待逻辑。
+
+## [v2.3.1] - 2026-01-19
+### 新功能
+- **Homebrew 支持**: 正式支持 Homebrew 安装！
+    - 通过 Tap 安装: `brew tap rixingyike/setalias && brew install setalias`
+    - 官方仓库: 官方 PR 已提交，即将支持 `brew install setalias`。
+- **依赖检查**: `install.sh` 安装脚本新增智能依赖检查，自动检测并提示缺失的 Python 库 (`requests`, `openai`, `Pillow`, `pygifsicle`) 和系统工具 (`git`, `curl`, `jq`)。
+
 ## [v2.3.0] - 2026-01-19
 ### 新功能
 - **全新 Logo**: 引入故宫红 (#C62828) 砖块风格 ASCII 艺术 Logo，提升启动体验。

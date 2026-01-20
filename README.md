@@ -17,9 +17,21 @@
 
 ## 📥 安装
 
-### 1. 下载
-
 前往 [Releases](https://github.com/rixingyike/setalias_app/releases) 页面下载最新版本的 `SetAlias.dmg`。
+
+### 1. 安装 (推荐 Homebrew)
+
+最简单的安装方式是通过 Homebrew：
+
+```bash
+brew tap rixingyike/setalias
+brew install setalias
+```
+
+或者手动安装：
+
+#### 下载 DMG
+1. 前往 [Releases](https://github.com/rixingyike/setalias_app/releases) 页面下载最新版本的 `SetAlias.dmg`。
 
 ### 2. 打开 DMG
 
