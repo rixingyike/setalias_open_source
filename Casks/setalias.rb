@@ -1,6 +1,6 @@
 cask "setalias" do
   version "2.3.4"
-  sha256 "016a1c9b7986a1bd382e6fec36d10d98392da8e8494f62284d9702944cb231f3"
+  sha256 "5620e2a7d4143a7513282c49c03f930eb0754f0574b1077f834402343c47f645"
 
   url "https://github.com/rixingyike/homebrew-setalias/releases/download/v2.3.4/SetAlias.dmg"
   name "SetAlias"
