@@ -1,5 +1,17 @@
 # Changelog
 
+## [v2.3.6] - 2026-01-21
+### 新功能
+- **Windows (Git Bash) 支持**: 安装脚本 `install.sh` 现已支持在 Windows 环境下运行（需 Git Bash）。
+    - 自动识别操作系统，将应用安装至 `~/SetAlias`。
+    - 自动跳过 macOS 专属检查（xattr, AppleScript）。
+- **Linux 支持**: 理论支持 Ubuntu/Debian 等发行版（需安装 `git`, `curl`, `jq`, `ffmpeg`）。
+
+### 优化
+- **文档更新**: `README_INSTALL.md` 新增 Windows/Linux 安装指南。
+- **字体兼容**: `gen_img` 脚本现已内置 Windows 常用中文字体路径 (`msyh`, `simhei`)。
+- **Setup 增强**: `setup.sh` 自动兼容 `python` / `python3` 命令，适应 Windows 环境。
+
 ## [v2.3.5] - 2026-01-21
 ### 重大变更
 - **零 Python 依赖 (Zero-Dependency Media)**: 多媒体处理栈（图片生成、音频/GIF 压缩）全面去 Python 化，转为直接调用 FFmpeg。
