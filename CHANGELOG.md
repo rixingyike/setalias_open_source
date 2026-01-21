@@ -1,5 +1,11 @@
 # Changelog
 
+## [v2.4.7] - 2026-01-21
+### 修复 (Hotfix)
+- **全面 Python 兼容**: 
+    - 修复了 `mnew`、`mowen_upload`、`ai_check` 等核心脚本中遗留的硬编码 `python3` 调用。
+    - 现在所有脚本都会严格通过 `PYTHON_CMD` 环境变量调用 Python，确保在 Windows (python.exe) 和 macOS (python3) 上都能完美运行。
+
 ## [v2.4.6] - 2026-01-21
 ### 优化 (Consistency)
 - **移除 Pillow 依赖**: 
