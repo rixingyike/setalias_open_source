@@ -1,5 +1,13 @@
 # Changelog
 
+## [v2.4.5] - 2026-01-21
+### 修复 (Hotfix)
+- **Windows Python 兼容性**: 
+    - 修复了 `mnew` / `:img` 等命令因找不到 `python3` 命令而报错的问题 (Windows 通常只有 `python`)。
+    - **双重保障**: 
+        1. 核心脚本现在会自动使用 `setup.sh` 中检测到的正确 Python 命令。
+        2. 安装程序 `install.sh` 现在会在 Windows 上自动创建 `python3 -> python` 的别名链接，彻底解决兼容性死角。
+
 ## [v2.4.4] - 2026-01-21
 ### 修复 (Hotfix)
 - **Windows 路径兼容性**: 修复了 Windows Git Bash 下 `/tmp` 路径无法被 PowerShell 正确识别导致 `DirectoryNotFoundException` 的问题。
