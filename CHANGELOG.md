@@ -1,5 +1,11 @@
 # Changelog
 
+## [v2.4.2] - 2026-01-21
+### 修复 (Hotfix)
+- **Windows 图片粘贴增强**: 
+    - 修复了在 Windows Git Bash 下使用 `:img` 指令无法从剪贴板获取图片的问题。
+    - 现在通过 PowerShell 显式加载 .NET 程序集 (`System.Windows.Forms`)，极大提高了剪贴板读取的稳定性。
+
 ## [v2.4.1] - 2026-01-21
 ### 修复 (Hotfix)
 - **安装交互修复**: 修复了在 Windows/Linux 使用 `curl | bash` 管道安装时，配置交互步骤被自动跳过的问题。
