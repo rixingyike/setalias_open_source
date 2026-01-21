@@ -1,5 +1,10 @@
 # Changelog
 
+## [v2.4.4] - 2026-01-21
+### 修复 (Hotfix)
+- **Windows 路径兼容性**: 修复了 Windows Git Bash 下 `/tmp` 路径无法被 PowerShell 正确识别导致 `DirectoryNotFoundException` 的问题。
+    - 脚本现在会自动将 Bash 路径转换为 Windows 混合路径 (Mixed Path)，确保临时文件能正确保存。
+
 ## [v2.4.3] - 2026-01-21
 ### 修复 (Hotfix)
 - **Windows 批量粘贴修复**: 
