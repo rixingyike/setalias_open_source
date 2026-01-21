@@ -1,5 +1,11 @@
 # Changelog
 
+## [v2.4.6] - 2026-01-21
+### 优化 (Consistency)
+- **移除 Pillow 依赖**: 
+    - 图片压缩模块现在直接调用 `ffmpeg` (全平台已自动安装) 进行处理，不再依赖 Python 的 Pillow 库。
+    - 这进一步简化了环境要求，避免了 "Pillow not installed" 的报错，实现了真正的“零额外依赖”。
+
 ## [v2.4.5] - 2026-01-21
 ### 修复 (Hotfix)
 - **Windows Python 兼容性**: 
