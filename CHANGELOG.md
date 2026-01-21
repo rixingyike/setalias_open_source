@@ -1,5 +1,12 @@
 # Changelog
 
+## [v2.3.7] - 2026-01-21
+### 修复 (Hotfix)
+- **Windows 安装修复**: 修复了 v2.3.6 版本中 `install.sh` 的语法错误 (syntax error) 导致安装中断的问题。
+- **环境检测增强**: 
+    - 自动识别 Windows 常用 Python 命令别名 (`python`)，解决"安装了 Python 但识别不到"的问题。
+    - 为 Windows 用户提供直接下载 `jq.exe` 的 curl 命令提示。
+
 ## [v2.3.6] - 2026-01-21
 ### 新功能
 - **Windows (Git Bash) 支持**: 安装脚本 `install.sh` 现已支持在 Windows 环境下运行（需 Git Bash）。
